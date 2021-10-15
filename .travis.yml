@@ -9,21 +9,21 @@
 
 
 # Tagging
-- docker tag udagram-api-feed manel/udagram-api-feed:v1
+- docker tag udagram-api-feed boujlelmanel/udagram-api-feed:v1
 # Do similar for other three images
-- docker tag udagram-api-user manel/udagram-api-user:v1
-- docker tag udagram-frontend manel/udagram-frontend:v1
-- docker tag udagram-reverseproxy manel/udagram-repository:v1
+- docker tag udagram-api-user boujlelmanel/udagram-api-user:v1
+- docker tag udagram-frontend boujlelmanel/udagram-frontend:v1
+- docker tag udagram-reverseproxy boujlelmanel/udagram-repository:v1
 
 
 # Push
 # Assuming DOCKER_PASSWORD and DOCKER_USERNAME are set in the Travis repository settings
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-- docker push manel/udagram-api-feed:v1
+- docker push boujlelmanel/udagram-api-feed:v1
 # Do similar for other three images
-- docker push manel/udagram-api-user:v1
-- docker push manel/udagram-frontend:v1
-- docker push manel/udagram-reverseproxy:v1
+- docker push boujlelmanel/udagram-api-user:v1
+- docker push boujlelmanel/udagram-frontend:v1
+- docker push boujlelmanel/udagram-reverseproxy:v1
 
 
  
